@@ -13,6 +13,7 @@ const port = 3000;
 app.post("/dogs/add", async (req, res) => {
   const {
     nameOficial,
+    img,
     secondaryName,
     size,
     country,
@@ -22,6 +23,7 @@ app.post("/dogs/add", async (req, res) => {
   } = req.body;
   const dog = {
     nameOficial,
+    img,
     secondaryName,
     size,
     country,
@@ -79,6 +81,7 @@ app.get("/dogs/:id", async (req, res) => {
 app.put("/dogs/:id", async (req, res) => {
   const {
     nameOficial,
+    img,
     secondaryName,
     size,
     country,
@@ -88,6 +91,7 @@ app.put("/dogs/:id", async (req, res) => {
   } = req.body;
   const dog = {
     nameOficial,
+    img,
     secondaryName,
     size,
     country,
